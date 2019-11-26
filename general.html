@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Christopher Welte - Design Side Projects</title>
+<meta name="description" content="Here are examples of all the different types of mediums that I work in, including print, web, branding, product design and even my sketches.">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+<script type="text/javascript" src="/js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/myjs.js"></script>
+<script type="text/javascript" src="/js/content.js"></script>
+<script type="text/javascript" src="/js/getMorningShadows.js"></script>
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/main.css" rel="stylesheet">
+<link href="/css/portfolio.css" rel="stylesheet">
+<!--<link href="../css/portfolio.css" rel="stylesheet">
+	 HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+<body>
+<div class="container">
+	<!--HEADER-->
+	<div class="row">
+		<div id="header" data-role="header"></div>
+	</div>
+	<div class="row section-block">
+		<h2 id="portfolioOtherTitle" class="pageTitle col-sm-6">Content Holder</h2>
+	</div>
+	
+	<div class="row portfolioContent">
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="panel" id="#portPanel"> 
+				<!--Collapsible DIVs go here -->
+				
+				<!--Chop-->
+				<div id="collapseChop" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingChop">
+					<div class="panel-body pieceBody">
+						<div class="row portfolio-bucket">
+							<div class="col-xs-12">
+								<a class="pull-right" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseChop" aria-expanded="true" aria-controls="collapseChop"><span aria-hidden="true">&times;</span></a>
+							</div>
+							<div class="col-xs-12 col-lg-3">
+								<h2>Monogram Chop</h2>
+								<p>Upon researching <a href="https://en.wikipedia.org/wiki/Seal_(East_Asia)" target="_blank">East Asian signature "chop" stamps</a> (often put on artwork and official documents) I was inspired to create one of my own.</p>
+							</div>
+							<div class="col-xs-12 col-lg-9 text-center">
+								<div class="bigPicNoScroll"><img src="images/portfolios/self/chop/cmw-chop04.jpg" alt="Chop" class="img-responsive pull-right careers" /></div>
+								<div class="bigPicNoScroll"><img src="images/portfolios/self/chop/cmw-chop02.jpg" alt="Chop" class="img-responsive pull-right careers" /></div>
+								<div class="bigPicNoScroll"><img src="images/portfolios/self/chop/cmw-chop03.jpg" alt="Chop" class="img-responsive pull-right careers" /></div>
+								<div class="bigPicNoScroll"><img src="images/portfolios/self/chop/cmw-chop-comps.png" alt="Chop" class="img-responsive pull-right careers" /></div>
+							</div>
+						</div>
+					</div>
+				</div>
+										
+			</div><!-- close collapsible panel set -->
+					
+			<!--Link Boxes go here -->
+			
+			<!--Sketches-->
+			<div class="col-xs-6 col-md-3">
+				<a class="thumbnail" role="button" href="sketches.html">
+					<img class="img-responsive" src="images/portfolios/self/sketches/gator-sketch-t.jpg" alt="Sketches">
+					<div class="caption">
+						<h4>Sketches</h4>
+					</div>
+				</a>
+			</div>
+			<!--Photography-->
+			<div class="col-xs-6 col-md-3">
+				<a class="thumbnail" role="button" href="photography.html">
+					<img class="img-responsive" src="images/portfolios/self/photo-t.jpg" alt="Photography">
+					<div class="caption">
+						<h4>Photography</h4>
+					</div>
+				</a>
+			</div>
+			<!--Morning Shadows-->
+			<div class="col-xs-6 col-md-3">
+				<a class="thumbnail" role="button" href="photography-ms.html">
+					<img class="img-responsive" src="images/portfolios/photography/MorningShadows/MorningShadows-cmw-004.jpg" alt="Photography Morning Shadows">
+					<div class="caption">
+						<h4>Morning Shadows</h4>
+					</div>
+				</a>
+			</div>
+			<!--Chop-->
+			<div class="col-xs-6 col-md-3">
+				<a class="thumbnail" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseChop" aria-expanded="true" aria-controls="collapseChop" data-scroll-to="#collapseChop">
+					<img class="img-responsive" src="images/portfolios/self/chop/cmw-chop-t.gif" alt="Monogram Chop">
+					<div class="caption">
+						<h4>Monogram Chop</h4>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!--close panel-group -->
+		
+		<!-- END portfolio row -->
+	</div>
+
+	<div class="row rowMargin">
+		<div id="mainFooter" class="footer text-center"></div>
+	</div>
+</div>
+<script>
+	//thumbnail set focus
+$(".thumbnail").click(function() {
+	"use strict";
+    $('html, body').animate({
+        scrollTop: $("body").offset().top
+    }, 500);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+/*--USED FOR TEMP DEFAULT PAGE--*/
+
+body {
+    background-color: #000; 
+    color: #000; 
+}
+
+.containerGrid {
+    margin: 21px; 
+    padding: 30px; 
+    background-color: #fff;
+}
+
+.containerGrid .smaller {
+    margin-top: 3px;
+    color: #333; 
+    font-size: .9em;
+}
+
+h1 {
+	font-weight: 900;
+}

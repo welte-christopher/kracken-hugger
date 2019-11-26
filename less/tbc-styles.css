@@ -1,0 +1,260 @@
+/* LESS Document */
+/*--BLOCK LEVEL--*/
+html {
+  overflow-y: scroll;
+}
+body {
+  /*font-family: 'Montserrat','helvetica',sans-serif;*/
+  padding-top: 35px;
+  font-size: 16px;
+}
+@media (min-width: 767px) {
+  body {
+    padding-top: 0px;
+  }
+}
+.container {
+  position: relative;
+  /*-webkit-transition: all 1s ease;*/
+  /*-moz-transition: all 1s ease;*/
+  /*-o-transition: all 1s ease;*/
+  /*transition: all 1s ease;*/
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.rowMargin {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.rowPadding {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.table > tbody > tr > td {
+  padding: 4px;
+  border-top: none;
+}
+.table > tbody > tr > td > h4 {
+  margin-bottom: 0px;
+  padding: 0;
+}
+/*--SITE HEADER & NAV--*/
+.siteTop {
+  /*background-color: #464646;
+	color: #fff;*/
+  margin-top: 16px;
+  background: #fff46e;
+  background: -moz-linear-gradient(top, #fff46e 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #fff46e 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #fff46e 0%, #ffffff 100%);
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.logo-block h1 {
+  margin-top: 10px;
+}
+.logo-block h3 {
+  padding: 10px;
+  text-align: center;
+}
+.logo-block img {
+  margin: 0 auto;
+  border: 3px solid #000;
+  border-radius: 10px;
+}
+.header-side-blocks img {
+  display: none;
+}
+.header-side-blocks .sub-head {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .siteTop {
+    margin-top: 0;
+  }
+  .siteTop .header-email,
+  .siteTop .header-phone {
+    text-align: center;
+  }
+  .siteTop .header-email a,
+  .siteTop .header-phone a {
+    font-size: 18px;
+  }
+  .logo-block h1 {
+    margin-top: 5px;
+  }
+  .header-side-blocks {
+    position: relative;
+  }
+  .header-side-blocks img {
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .siteTop .header-email a,
+  .siteTop .header-phone a {
+    font-size: 24px;
+  }
+  .header-side-blocks.left-image .sub-head {
+    right: 10%;
+  }
+  .header-side-blocks.right-image .sub-head {
+    left: 10%;
+  }
+}
+.head-icon {
+  border: 5px solid #000000;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: #a6ce39;
+}
+.head-icon img {
+  width: 80%;
+}
+.nav {
+  background-color: #000000;
+  padding: 10px;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  color: #fff;
+}
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+  color: #fff;
+}
+.nav a {
+  color: #fff;
+}
+.nav a:hover {
+  background-color: #3e505b !important;
+}
+.section-block {
+  margin-bottom: 15px;
+}
+.section-block .btn-back {
+  margin: 20px 10px 10px 10px;
+}
+.myNav {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.myNav li {
+  margin-right: 0px;
+}
+@media (max-width: 375px) {
+  .nav-pills > li {
+    float: none;
+  }
+}
+.tbc {
+  background-color: #202c39;
+  color: #fff;
+}
+.tbc a {
+  color: #fff;
+}
+.tbc a:hover {
+  color: #000;
+}
+.tbc-email {
+  font-size: 18px;
+}
+.btn-tbc {
+  color: #fff;
+  background-color: #a6ce39;
+  border-color: #84a629;
+}
+.btn-tbc:hover {
+  background-color: #d1e69a;
+  color: #3e505b;
+}
+/* General Page Info */
+.pageTitle {
+  margin-bottom: 11px;
+  margin-top: 20px;
+}
+/* Homepage */
+.carousel {
+  height: 400px;
+  overflow: hidden;
+}
+.panel-title {
+  font-size: 18px;
+}
+#micro-carousel {
+  /*border: 1px solid #ccc;*/
+  height: 60px;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 15px;
+}
+#micro-carousel li {
+  height: 60px;
+  font-size: 20px;
+  font-style: italic;
+  color: #337ab7;
+  font-weight: bold;
+}
+/* Testimonials */
+.testimonial {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  color: #337ab7;
+}
+/* Contact Us Page */
+.emailThanksBlock {
+  height: 200px;
+}
+.emailThanks {
+  padding-top: 60px;
+  text-align: center;
+}
+/* Masonry container */
+.masonry {
+  column-count: 1;
+  /*column-gap: 1em;*/
+}
+.masonry img {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .masonry {
+    column-count: 2;
+    column-gap: 1em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+.gallery {
+  display: inline-block;
+  margin: 1em 0;
+  width: 100%;
+}
+/*--FOOTER--*/
+.footer {
+  margin: 20px 0;
+  border-top: 4px solid #000000;
+}
+.footer ul {
+  width: 150px;
+  margin: 0 auto;
+}
+li.check:before {
+  content: url(../images/checks.png);
+}
+.footer .copyright {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=tbc-styles.css.map */

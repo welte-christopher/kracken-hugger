@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Christopher Welte - UVA Test Page</title>
+<meta name="description" content="This is my UVA Test Page">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/test-uva.css" rel="stylesheet">
+	<link href="/less/search-test.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid header-container">
+	<div class="row header-row clearfix">
+		<header id="top-banner" class="twelvecol" role="banner">
+			<div class="container">
+				<h1 class="ninecol" id="main-title"> <a href="http://styleguide.library.virginia.edu/"> <span class="donor-title">University of Virginia</span> <span class="library-title">Library Search Tool</span> </a></h1>
+				<a class="threecol last" id="logo" href="http://library.virginia.edu" aria-label="U V A Library"> <img src="/images/test/liblogo.png" width="198" height="90" alt="UVA Library"> </a> 
+			</div>
+		</header>
+	</div>
+</div>
+<div class="container-fluid content-container">
+	<div class="row content-row clearfix">
+		<div id="content" class="row">
+			<div id="main" class="col-xs-12" role="main">
+				<div class="container">
+					<h1 class="page-title">Search</h1>
+					<div class="row">
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+							<div class="input-group input-group-lg">
+								<input type="text" class="form-control" aria-label="Search" id="query" placeholder="Search for...">
+								<span class="input-group-btn">
+									<button class="btn btn-primary search-button" type="button" onclick="performSearch($('#query').val())">Go</button>
+								</span>
+							</div>
+						</div>
+					</div>
+					
+					<!--<div class="row rowMargin">
+						<nav class="navbar navbar-default">
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<div class="btn-group navbar-right" role="group" aria-label="Refine Results">
+								  <div class="btn-group" role="group">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-label="Filter" aria-haspopup="true" aria-expanded="false">
+									  Filter
+									  <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+									  <li><a href="#" title="Option 1" data-value="option1" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 1</a></li>
+									  <li><a href="#" title="Option 2" data-value="option2" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 2</a></li>
+									  <li><a href="#" title="Option 3" data-value="option3" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 3</a></li>
+									  <li><a href="#" title="Option 4" data-value="option4" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 4</a></li>
+									  <li><a href="#" title="Option 5" data-value="option5" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 5</a></li>
+									  <li><a href="#" title="Option 6" data-value="option6" tabIndex="-1"><input type="checkbox"/>&nbsp;Option 6</a></li>
+									</ul>
+								  </div>
+								  <div class="btn-group" role="group">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-label="Sort" aria-haspopup="true" aria-expanded="false">
+									  Sort
+									  <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+									  <li><a href="#" title="Sort A">Sort by A</a></li>
+									  <li><a href="#" title="Sort B">Sort by B</a></li>
+									</ul>
+								  </div>
+								</div>
+							</div>
+						</nav>
+					</div>-->
+					
+					<div id="search-results" class="row rowMargin">
+						<div class="hidden-xs col-sm-3">
+							<div class="panel panel-default filter-panel">
+							  <div class="panel-heading">
+								<h3 class="panel-title filter-panel-title">Filter by:</h3>
+							  </div>
+							  <div class="panel-body">
+									<div class="checkbox">
+									  <label for="ValueA">
+										<input type="checkbox" value="Value A" name="ValueA">
+										Value A
+									  </label>
+									</div>
+									<div class="checkbox disabled">
+										  <label for="ValueB">
+											<input type="checkbox" value="Value B" name="ValueB">
+											Value B
+										  </label>
+									</div>
+									<div class="checkbox disabled">
+										  <label for="ValueC">
+											<input type="checkbox" value="Value C" name="ValueC">
+											Value C
+										  </label>
+									</div>
+									<div class="checkbox disabled">
+										  <label for="ValueD">
+											<input type="checkbox" value="Value D" name="ValueD">
+											Value D
+										  </label>
+									</div>
+									<div class="checkbox disabled">
+										  <label for="ValueE">
+											<input type="checkbox" value="Value E" name="ValueE">
+											Value E
+										  </label>
+									</div>
+									<div class="checkbox disabled">
+										  <label for="ValueF">
+											<input type="checkbox" value="Value F" name="ValueF">
+											Value F
+										  </label>
+									</div>
+									<div class="checkbox disabled">
+										  <label for="ValueG">
+											<input type="checkbox" value="Value G" name="ValueG">
+											Value G
+										  </label>
+									</div>
+							  </div>
+							</div>
+						</div>
+						<div class="col-xs-12 visible-xs-inline-block">
+								<button class="btn btn-primary filter-button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+								  Filter results
+								</button>
+								<div class="collapse" id="collapseExample">
+								  <div class="well mobile-filters">
+										<div class="checkbox">
+										  <label for="ValueA">
+											<input type="checkbox" value="Value A" name="ValueA">
+											Value A
+										  </label>
+										</div>
+										<div class="checkbox">
+											  <label for="ValueB">
+												<input type="checkbox" value="Value B" name="ValueB">
+												Value B
+											  </label>
+										</div>
+										<div class="checkbox">
+											  <label for="ValueC">
+												<input type="checkbox" value="Value C" name="ValueC">
+												Value C
+											  </label>
+										</div>
+										<div class="checkbox">
+											  <label for="ValueD">
+												<input type="checkbox" value="Value D" name="ValueD">
+												Value D
+											  </label>
+										</div>
+										<div class="checkbox">
+											  <label for="ValueE">
+												<input type="checkbox" value="Value E" name="ValueE">
+												Value E
+											  </label>
+										</div>
+										<div class="checkbox">
+											  <label for="ValueF">
+												<input type="checkbox" value="Value F" name="ValueF">
+												Value F
+											  </label>
+										</div>
+										<div class="checkbox">
+											  <label for="ValueG">
+												<input type="checkbox" value="Value G" name="ValueG">
+												Value G
+											  </label>
+										</div>
+								  </div>
+								</div>
+							</div>
+						<div class="col-xs-12 col-sm-9">
+							<ul class="nav nav-pills" role="tablist">
+								<li role="presentation" class="active">
+									<a href="#Combined" class="text-center" aria-controls="combined" role="tab" data-toggle="pill" title="All Results">All<br />Results</a>
+								</li>
+								<li role="presentation">
+									<a href="#Google" class="text-center" aria-controls="google" role="tab" data-toggle="pill" title="Google Results">Google<br />Results</a>
+								</li>
+								<li role="presentation">
+									<a href="#Catalog" class="text-center" aria-controls="catalog" role="tab" data-toggle="pill" title="Catalog Results">Catalog<br />Results</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="Combined">
+									<div id="searchResults" aria-label="result statistics"></div>
+									<ul class="googleResults2 catalogResults2 data-list list-unstyled"></ul>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="Google">
+									<div id="searchGoogleResults"></div>
+									<ul id="googleResults" class="data-list list-unstyled">
+									</ul>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="Catalog">
+									<div id="searchCatalogResults"></div>
+									<ul id="catalogResults" class="data-list list-unstyled">
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 page-navigation-demo">
+								<nav aria-label="Page navigation" class="text-center">
+								  <ul class="pagination">
+									<li>
+									  <a href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									  </a>
+									</li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li>
+									  <a href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									  </a>
+									</li>
+								  </ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="/js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script>
+	
+	var catalogResults = [];
+	var totalCatalogResults = 0;
+	var googleResults = [];
+	var totalGoogleResults = 0;
+	
+	//UVA Catalog Database
+	function getCatalog(q){
+		$.getJSON( "http://search.lib.virginia.edu/catalog.json?q=" + q, function( data ) {
+			catalogResults = data.response.docs;
+			totalCatalogResults = parseInt(data.response.numFound);
+
+			updateSearchResultsStatus(q);
+			
+		  $.each( data.response.docs, function( key, val ) {
+			$('#catalogResults,.catalogResults2').append("<li class='result'>" + "<span class='test-title'>" + val.title_display + "</span>" + "<p class='test-display display-block'>" + val.subtitle_display + "</p>" + "<p class='test-location'><span class='call-number'>Call Number:</span> " + val.call_number_display + "</p>" + "<span class='label label-catalog'>UVA Catalog Result</span>" + "</li>")
+		  });
+		});
+	}
+
+	//Google database
+	function getGoogle(q){
+		$.getJSON( "https://www.googleapis.com/customsearch/v1?cx=013707657808325243262:ec-difi_4ri&key=AIzaSyAZSs-bU5lqxDV6FbP4VQLnfHaG-eYcoS0&q=" + q, function( data ) {
+			googleResults = data.items;
+			totalGoogleResults = parseInt(data.queries.request[0].totalResults);
+
+			updateSearchResultsStatus(q);
+			
+		  $.each( data.items, function( key, val ) {
+			$('#googleResults,.googleResults2').append("<li class='result'>" + "<a href='" + val.link + "' title='" + val.title + "'" + " class='test-title'>" + val.title +"</a>" + "<p class='test-display'>" + val.snippet + "</p>" + "<span class='label label-google'>Google Result</span>" + "</li>");
+		  });
+		});
+	}
+
+	function performSearch(q){
+
+		// clear existing results
+		$('#search_query').empty();
+		$('#catalogResults,.catalogResults2').empty();
+		$('#googleResults,.googleResults2').empty();
+
+		// perform sub searches
+		getCatalog(q);
+		getGoogle(q);
+	}
+	
+	function updateSearchResultsStatus(q) {
+		// gather quantities
+		var numResultsShowing = (googleResults.length + catalogResults.length);
+		var totalNumResults = (totalGoogleResults + totalCatalogResults);
+		
+		var numResultsGoogle = (googleResults.length);
+		var totalNumResultsGoogle = (totalGoogleResults);
+		
+		var numResultsCatalog = (catalogResults.length);
+		var totalNumResultsCatalog = (totalCatalogResults);
+
+		$("#searchResults").html("<div class='alert alert-info test-results'>" + "Showing " + numResultsShowing + " of " + totalNumResults + " results found in your search for " + "'" + q + "'" + "</div>");
+		$("#searchGoogleResults").html("<div class='alert alert-info test-results'>" + "Showing " + numResultsGoogle + " of " + totalNumResultsGoogle + " results found in your search for " + "'" + q + "'" + "</div>");
+		$("#searchCatalogResults").html("<div class='alert alert-info test-results'>" + "Showing " + numResultsCatalog + " of " + totalNumResultsCatalog + " results found in your search for " + "'" + q + "'" + "</div>");
+	}
+	
+	function enterPressed(event){
+	  if (event.keyCode == 13) {
+		$("#searchButton").click();
+	  }
+	}
+
+	
+	$( ".search-button" ).click(function() {
+	  $( "#search-results" ).show( "fast");
+	});
+</script>
+</body>
+</html>

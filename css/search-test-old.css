@@ -1,0 +1,25 @@
+/*--BLOCK LEVEL--*/
+html { overflow-y: scroll; }
+
+body { padding-top: 35px; }
+
+@media (min-width: 767px) {
+	body {
+		padding-top: 0px;
+	}
+}
+
+.container { 
+	position: relative; 
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.rowMargin { margin-top: 15px; margin-bottom: 15px; }
+.rowPadding { padding-top: 15px; padding-bottom: 15px; }
+
+
+/*--SITE HEADER & NAV--*/
+.mySearchBar {
+}
+

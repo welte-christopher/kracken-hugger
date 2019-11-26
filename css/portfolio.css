@@ -1,0 +1,153 @@
+
+.overlay {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  background-color: #142026;
+  color: #758594;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+     -moz-transition: all 0.2s ease-out;
+       -o-transition: all 0.2s ease-out;
+          transition: all 0.2s ease-out;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.portfolio-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+}
+
+.position-relative:hover .see-larger {
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+
+  .portfolio-description {
+    padding: 30px;
+  }
+
+}
+
+/* CMW photo*/
+.photo-block {
+	margin-bottom: 20px;
+}
+
+.portfolio.photo {
+	height: 100px;
+	border: 3px solid cyan;
+	margin: 20px;
+}
+
+.caption h4, .caption h4 small {
+	font-weight: 300;
+}
+
+.thumbnail .caption {
+	height: 70px;
+}
+
+#portfolio {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+     -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    }
+
+.sketches {
+    margin-bottom: 1em;
+	width: 100%;
+	
+}
+
+@media only screen and (min-width: 768px){
+	.sketches {
+		width: 48%;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	.sketches {
+		width: 32%;
+	}
+}
+
+/* Close "X"*/
+.pieceBody a span {
+	font-size: 30px;
+}
+
+.pieceBody a:hover {
+	text-decoration: none;	
+}
+
+	
+.panel {
+	margin-bottom: 0px; 
+	background-color: none;
+	border: none;
+	border-radius: 0px; 
+	-webkit-box-shadow: none; 
+	box-shadow: none; 
+}
+
+.web-block {
+	height: 240px;
+}
+
+.portfolioContent {
+	margin-top: 50px;
+}
+
+.portfolio-bucket {
+	margin-bottom: 30px;	
+}
+
+.bigPic {
+	height: 500px; 
+	overflow: scroll; 
+	overflow: auto; 
+	border: 3px solid #999; 
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+
+.bigPicNoScroll {
+	border: 3px solid #999; 
+	border-radius: 10px;
+	overflow: hidden;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+.bigPic-full {
+	border: 3px solid #999; 
+	border-radius: 10px;
+	height: 100%;
+	display: inline-block;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
